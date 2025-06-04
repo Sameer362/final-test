@@ -5,7 +5,7 @@ variable "region" {
 }
 
 variable "cluster_name" {
-  description = "Name of the EKS cluster"
+  description = "EKS cluster name"
   type        = string
   default     = "flask-cluster"
 }
@@ -23,7 +23,7 @@ variable "public_subnets" {
 }
 
 variable "azs" {
-  description = "Availability Zones for the subnets"
+  description = "List of Availability Zones"
   type        = list(string)
   default     = ["us-east-1a", "us-east-1b"]
 }
